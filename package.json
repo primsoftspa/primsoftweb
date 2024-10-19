@@ -1,5 +1,5 @@
 {
-  "name": "seguryguardia",
+  "name": "primsoft",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -31,6 +31,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/sweetalert": "^2.0.4",
     "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.20",
     "gh-pages": "^4.0.0",
     "sass": "^1.55.0",
     "typescript": "^4.6.4",

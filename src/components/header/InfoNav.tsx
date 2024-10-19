@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { mailTo, whatsAppTo } from "../../utils/utilsFormat";
+import data from "../../data/contacto.json"
 
 export default () => {
   return (
@@ -9,21 +10,21 @@ export default () => {
         <Nav className="me-auto">
           <Navbar.Text className="me-3">
             <a
-              href={whatsAppTo("56941290755", "Buenos días")}
+              href={whatsAppTo(data.contact.phone, "Buenos días")}
               target="_blank"
               className="text-decoration-none"
             >
               <i className="fab fa-whatsapp text-success"></i>&nbsp;&nbsp;
-              Teléfono +56 9 4129 0755
+              Teléfono + {data.contact.phone}
             </a>
           </Navbar.Text>
           <Navbar.Text className="me-3">
             <a
-              href={mailTo('contacto@primsoft.cl', 'Cotizar servicios')}
+              href={mailTo(data.contact.email, 'Cotizar proyecto')}
               className="text-decoration-none"
             >
               <i className="fa-solid fa-envelope text-danger"></i>&nbsp;&nbsp;
-              contacto@primsoft.cl
+              {data.contact.email}
             </a>
           </Navbar.Text>
         </Nav>

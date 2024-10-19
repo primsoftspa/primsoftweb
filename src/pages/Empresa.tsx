@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "react-bootstrap";
 import BgHeroRb from "../components/background/BgSection";
 import ReviewCliente from "../components/review/Clientes";

@@ -13,8 +13,7 @@ import Contact from "./components/Contact";
 const Home = lazy(() => import('./pages/Home'));
 const Servicios = lazy(()=> import('./pages/Servicios'));
 const Empresa =  lazy(() => import('./pages/Empresa'));
-const Clientes = lazy(()=> import('./pages/Clientes'))
-const Galeria = lazy(()=> import('./pages/Galeria'))
+const Clientes = lazy(()=> import('./pages/Clientes'));
 
 function App() {
   function GoToTop() {
@@ -44,7 +43,6 @@ function App() {
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/empresa" element={<Empresa />} />
-            <Route path="/galeria" element={<Galeria />} />
             <Route path="/clientes" element={<Clientes />} />
             <Route path="*" element={<Home />} />
           </Routes>

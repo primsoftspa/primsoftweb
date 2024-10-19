@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, useLocation } from "react-router-dom";
-import Logo from '../../assets/png/logo_empresa.png'
 
 export default () => {
   const location = useLocation();
@@ -14,9 +13,8 @@ export default () => {
     }}>
       <Container>
         {/* Logo Brand */}
-        <Navbar.Brand as={Link} to="/">
-          <img src="https://raw.githubusercontent.com/EniDev911/assets/refs/heads/main/png/logo/logo_con_bg.png" height="80"
-            className="d-inline-block align-top logo" />
+        <Navbar.Brand as={Link} to="/" className='py-4'>
+          PrimSoft
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

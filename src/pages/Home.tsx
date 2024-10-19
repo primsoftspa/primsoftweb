@@ -4,10 +4,12 @@ import ReviewClientes from "../components/review/Clientes";
 import ReviewService from "../components/review/ServicesAlt";
 import Valores from "../components/review/ValoresSwiper";
 import HeroText from "../components/body/HeroText";
-import data from "../data/contacto.json"
+import data from "../data/contacto.json";
+
 
 export default () => {
   return (
+    <>
     <section className="bg-light w-100">
       <CarouselRb />
       <h2 className="display-4 fw-bold my-5 text-center" style={{
@@ -16,5 +18,6 @@ export default () => {
       <ReviewService />
       <ReviewClientes />
     </section>
+    </>
   );
 };
