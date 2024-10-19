@@ -1,0 +1,17 @@
+{
+  "nombres": [
+    "Soluciones en administración de condominios",
+    "Soluciones para empresas",
+    "Asesorías, en desarrollo de software"
+  ],
+
+  "servicios": [
+    {
+      "id": "S001",
+      "title": "Software de Condominios",
+      "desc": "Optimiza la gestión de tu condominio con nuestro software personalizado. Nuestro sistema incluye funcionalidades como:<br><span style='color: #ff8'>Control de Residentes</span><br><span style='color: #ff8'>Control de Visitas</span>",
+      "img": "apartment.png",
+      "img2": "apartment.png"
+    }
+  ]
+}
