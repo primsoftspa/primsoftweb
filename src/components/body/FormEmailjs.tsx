@@ -3,6 +3,7 @@ import { Form, Button, FloatingLabel } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 
 export default () => {
@@ -52,9 +53,22 @@ export default () => {
           type="text"
           placeholder="Su nombre"
           name="name"
+          className="shadow-sm"
           required
         />
       </FloatingLabel>
+      {/* PHONE FIELD */}
+      <InputGroup className="mb-3 shadow-sm rounded">
+        <InputGroup.Text id="basic-addon1">+56</InputGroup.Text>
+        <Form.Control
+          placeholder="Su teléfono"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+          className="p-3"
+          name="phone"
+          type="tel"
+        />
+      </InputGroup>
       {/* FIELD EMAIL */}
       <FloatingLabel
         controlId="floatingEmail"
@@ -65,6 +79,7 @@ export default () => {
           type="email"
           placeholder="Su email"
           name="email"
+          className="shadow-sm"
           required
         />
       </FloatingLabel>
@@ -75,10 +90,11 @@ export default () => {
           placeholder="su mensaje"
           style={{ height: "100px" }}
           name="message"
+          className="shadow-sm"
           required
         />
       </FloatingLabel>
-      <Button variant="dark" type="submit" className="mt-3 w-100 bg-gradient">
+      <Button variant="info" type="submit" className="mt-3 w-100 p-2">
         Enviar
       </Button>
     </Form>

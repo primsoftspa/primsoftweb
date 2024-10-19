@@ -23,7 +23,7 @@ export default ({
 
   const showModal = () => {
     const sendMail = mailTo(
-      "asocgremial.camionescoquimbo@gmail.com",
+      "contacto@primsoft.cl",
       `Cotizar ${title}`
     );
 

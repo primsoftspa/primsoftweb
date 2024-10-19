@@ -8,8 +8,7 @@ export default () => {
 
   return (
     <Navbar expand="lg" variant="dark" style={{
-      background: "linear-gradient(to right, #000 40%, #222 60%, #333 80%)",
-      borderTop: "1px solid #fff"
+      background: "linear-gradient(to right, #000 40%, #222 60%, #333 80%)"
     }}>
       <Container>
         {/* Logo Brand */}

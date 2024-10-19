@@ -7,12 +7,12 @@ import data from "../data/contacto.json";
 export default () => {
 
   return (
-    <React.Fragment>
+    <>
       {/* Contact Section */}
-      <Container className="my-5 animate__animated animate__fadeIn" as="section">
-        <Row>
-          <Col xs={12} md={6}>
-            <p>
+      <Container fluid className="animate__animated animate__fadeIn" as="section">
+        <Row className="align-items-center">
+          <Col xs={12} md={6} className="py-5" style={{background: "#111"}}>
+            <p className="text-gray">
               Realice todas sus consultas a través de nuestro formulario, o
               contactenos por medio de los siguientes medios:
             </p>
@@ -23,27 +23,35 @@ export default () => {
               </div>
                 <a
               href={mailTo(data.contact.email, 'Cotizar servicios')}
-              className="text-decoration-none text-dark"
+              className="text-decoration-none text-light"
             >{data.contact.email}</a>
             </div>
             <div className="d-flex align-items-center p-1 m-0">
               <div className="px-3">
-                <i className="fa-brands fa-whatsapp fs-3 text-success"></i>
+                <i className="fa-solid fa-phone fs-3 text-info"></i>
               </div>
-                  <a href={`tel: ${data.contact.phone}`} className="text-decoration-none text-dark">+{data.contact.phone}</a>
+                  <a href={`tel: ${data.contact.phone}`} className="text-decoration-none text-light">+{data.contact.phone}</a>
+            </div>
+                        <div className="box-canvas">
+              <div className="wing left"></div>
+              <div className="wing right"></div>
+              <div className="rocket">
+                <div className="main">
+                  <div className="window"></div>
+                </div>
+              </div>
+              <div className="flame-outer">
+                <div className="flame-inner"></div>
+              </div>
+              <div className="wing-center"></div>
             </div>
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={6} className="py-5 py-lg-0">
+            <p>Déjanos tus datos. Un ejecutivo de PrimSoft te contactará en unos momentos.</p>
             <FormEmailjs />
           </Col>
         </Row>
       </Container>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.7346584304837!2d-71.25478492530875!3d-29.90074532462604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691ca70ae564c33%3A0xb10b0957a6a8ce3a!2sBrasil%20310%2C%201710056%20La%20Serena%2C%20Coquimbo!5e0!3m2!1ses!2scl!4v1695875590208!5m2!1ses!2scl"
-        loading="lazy"
-        className="w-100 mt-3"
-        height="450"
-      ></iframe>
-    </React.Fragment>
+    </>
   );
 };

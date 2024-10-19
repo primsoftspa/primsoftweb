@@ -1,4 +1,4 @@
-import firstBgImg from '../assets/slider/01.jpg'
+import firstBgImg from '../../assets/slider/01.jpg'
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
@@ -33,8 +33,7 @@ const TypedText = () => {
 };
 
 
-function CarouselRb() {
-
+export default () => {
   return (
     <>
       {/* FIRST SLIDE */}
@@ -57,4 +56,3 @@ function CarouselRb() {
   );
 }
 
-export default CarouselRb;

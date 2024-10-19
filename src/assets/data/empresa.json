@@ -1,24 +1,24 @@
 {
   "empresa": [
-      {
-        "id": "001",
-        "title": "SEGURYGUARDIA",
-        "content": "Seguryguardia limitada es una empresa prestadora de servicios de seguridad. Dedicada a evaluar, controlar y proteger bienes y activos de las diferentes empresas"
-      },
-      {
-        "id": "002",
-        "title": "¿QUIENES SOMOS?",
-        "content": "Somos una empresa prestadora de servicios de seguridad, con alta cobertura en la zona norte de nuestro país. Destacamos con gran sentido la responsabilidad y excelencia en servicio, nuestro equipo y encargado de operaciones cuentan con un amplio conocimientos en el área. Nuestra empresa se desempeña dentro de los parámetros sobre la legislación y normativa actual que regula el funcionamiento de las actividades en nuestros servicios. El personal se capacita en las siguientes materia: <ul><li>Ley N°3607 </li><li>Decreto Supremo N°93</li></ul>"
-      },
-      {
-        "id": "003",
-        "title": "MISIÓN",
-        "content": "A través de nuestras técnicas modernas de administración; aconsejamos a las diferentes empresas, instituciones, condominios, entidades públicas y privadas en general, a enfocar todos sus esfuerzos hacia el giro de la actividad que le son propios"
-      },
-      {
-        "id": "004",
-        "title": "¿QUIÉNES SOMOS?",
-        "content": "Somos la asociación Gremial de Dueños de Camiones de Coquimbo y nuestra misión es unificar a los pequeños y medianos transportistas de la región de Coquimbo para poder ser más competitivos en el mercado del transporte de carga, concretando trabajos seguros y pagos de sus facturas a tiempo, proporcionando una red de apoyo logístico para los transportistas y asesorarlos en su gestión. De esa manera se benificia más de 150 familias de la región, esto incluye a los dueños de camiones y sus choferes, lo que permite que la economía de la región avance. Además, Asiducam ayuda a que sus socios puedan renovar sus equipos y de esa manera ir a la vanguardia del transporte, algo que si no fuera por la unión que logra la Asociación Gremial sería casi imposible.<br />Actualmente Asiducam está compueta por 78 socios, de los cuales 65 están activos. <br />Desde el año 2018 Asiducam es miembro activo de la Comunidad Logística Portuaría Coquimbo (<strong>CLPC</strong>)"
-      }
-]
+    {
+      "id": "001",
+      "title": "¿QUIENES SOMOS?",
+      "content": "Es una compañía de desarrollo de software dedicada a crear soluciones innovadoras y personalizadas para empresas de todos los tamaños. Creemos que la tecnología debe ser accesible y útil para todos. Nos enfocamos en entender las necesidades específicas de cada cliente y ofrecer soluciones que no solo resuelvan problemas, sino que también mejoren la experiencia del usuario."
+    },
+    {
+      "id": "002",
+      "title": "¿QUIENES SOMOS?",
+      "content": "Somos una empresa prestadora de servicios de seguridad, con alta cobertura en la zona norte de nuestro país. Destacamos con gran sentido la responsabilidad y excelencia en servicio, nuestro equipo y encargado de operaciones cuentan con un amplio conocimientos en el área. Nuestra empresa se desempeña dentro de los parámetros sobre la legislación y normativa actual que regula el funcionamiento de las actividades en nuestros servicios. El personal se capacita en las siguientes materia: <ul><li>Ley N°3607 </li><li>Decreto Supremo N°93</li></ul>"
+    },
+    {
+      "id": "003",
+      "title": "MISIÓN",
+      "content": "A través de nuestras técnicas modernas de administración; aconsejamos a las diferentes empresas, instituciones, condominios, entidades públicas y privadas en general, a enfocar todos sus esfuerzos hacia el giro de la actividad que le son propios"
+    },
+    {
+      "id": "004",
+      "title": "¿QUIÉNES SOMOS?",
+      "content": "Somos la asociación Gremial de Dueños de Camiones de Coquimbo y nuestra misión es unificar a los pequeños y medianos transportistas de la región de Coquimbo para poder ser más competitivos en el mercado del transporte de carga, concretando trabajos seguros y pagos de sus facturas a tiempo, proporcionando una red de apoyo logístico para los transportistas y asesorarlos en su gestión. De esa manera se benificia más de 150 familias de la región, esto incluye a los dueños de camiones y sus choferes, lo que permite que la economía de la región avance. Además, Asiducam ayuda a que sus socios puedan renovar sus equipos y de esa manera ir a la vanguardia del transporte, algo que si no fuera por la unión que logra la Asociación Gremial sería casi imposible.<br />Actualmente Asiducam está compueta por 78 socios, de los cuales 65 están activos. <br />Desde el año 2018 Asiducam es miembro activo de la Comunidad Logística Portuaría Coquimbo (<strong>CLPC</strong>)"
+    }
+  ]
 }
