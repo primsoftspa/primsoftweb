@@ -8,5 +8,5 @@ git init
 git checkout -b main
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:primsoft-group/primsoftweb.git main:gh-pages
+git push -f git@github.com:primsoftspa/primsoftweb.git main:gh-pages
 cd -
