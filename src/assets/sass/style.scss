@@ -226,6 +226,33 @@ details[open] summary::before {
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+
+.border-gradient {
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  // border-width: 5px;
+}
+
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.bg-night {
+    background: linear-gradient(to right, #000 10%, #111);
+}
+
+.social-instagram {
+  transition: all .2s ease;
+   &:hover {
+    background-color: #e1306c;
+    i,
+    a {
+      color: #000 !important;
+    }
+  }
+}
+
+
 // MOBILE
 .heroNav {
   display: none !important;

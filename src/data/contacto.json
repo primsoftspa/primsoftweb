@@ -7,6 +7,10 @@
   "social": {
     "facebook": "https://facebook.com",
     "twitter": "https://twitter.com",
-    "linkedin": "https://linkedin.com"
+    "linkedin": "https://linkedin.com",
+    "instagram": {
+      "user": "primsoft_spa",
+      "link": "https://www.instagram.com/primsoft_spa/"
+    }
   }
 }

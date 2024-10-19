@@ -24,10 +24,14 @@ export default function ReviewClientes() {
   return (
 
     <>
-
       <Row style={{
         padding: '40px 0',
-        background: "#185b8b"
+      background: 'radial-gradient(circle, #111, #000)', // Degradado
+      color: '#fff', // Color del texto
+      textAlign: 'center', // Alinear texto al centro
+      display: 'flex', // Flexbox para centrar contenido
+      alignItems: 'center', // Centrar verticalmente
+      justifyContent: 'center', // Centrar horizontalmente
       }}>
       <h4 className="text-uppercase text-center mt-5 fs-2 fw-bold"
         style={{ letterSpacing: "3px", color: "#fff" }}>nuestros clientes</h4>
