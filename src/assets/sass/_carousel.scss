@@ -1,0 +1,69 @@
+@use 'variables';
+@use 'mixins';
+
+$selector : '.carousel';
+
+// ** Carousel
+#{$selector} {
+
+  display: none;
+  visibility: hidden;
+
+  &__wrapper {
+    width: 100%;
+    height: 100vh;
+    position : relative;
+      img {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: 1s;
+      
+          &.loaded {
+            opacity: 1;
+        }
+  }
+
+  }
+
+  &__controls{ 
+    position: absolute;
+    top:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    button {
+      display: block;
+      height: 100vh;
+      border: none;
+      background: transparent;
+      transition-duration: .4s;
+      transition-property: background-color;
+      transition-timing-function: ease-in-out;
+      &:hover{
+        background-color: #cccccc90;
+      }
+    }
+
+  }
+
+
+@media (min-width: 680px) {
+  &{
+    @include mixins.make-flexbox(center);
+    visibility: visible;
+  }
+}
+
+@media (min-width: 992px) {
+  @include mixins.make-flexbox(center);
+    visibility: visible;
+}
+
+@media (min-width: 1250px) {
+  @include mixins.make-flexbox(center);
+    visibility: visible;
+}
+
+}
