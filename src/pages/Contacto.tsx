@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import FormEmailjs from '../components/body/FormEmailjs'
 import { mailTo } from "../utils/utilsFormat";
+import data from "../data/contacto.json";
 
 export default () => {
 
@@ -17,33 +18,19 @@ export default () => {
             </p>
             <br />
             <div className="d-flex align-items-center p-1 m-0">
-              <div className="py-2 px-3 d-flex me-1 h-100">
-                <i className="fa-solid fa-envelope fs-3 text-dark"></i>
+              <div className="px-3">
+                <i className="fa-solid fa-envelope fs-3 text-info"></i>
               </div>
-              <div className="d-flex flex-column">
                 <a
-              href={mailTo('info@primsoft.cl', 'Cotizar servicios')}
-              className="text-decoration-none"
-            >info@primsoft.cl</a>
-              </div>
+              href={mailTo(data.contact.email, 'Cotizar servicios')}
+              className="text-decoration-none text-dark"
+            >{data.contact.email}</a>
             </div>
             <div className="d-flex align-items-center p-1 m-0">
-              <div className="py-2 px-3 rounded d-flex me-3">
-                <i className="fa-solid fa-phone fs-4 text-dark"></i>
+              <div className="px-3">
+                <i className="fa-brands fa-whatsapp fs-3 text-success"></i>
               </div>
-              <div className="d-flex flex-column">
-                Fonos:
-                <small>(51) 275 9893 (51) 275 4648</small>
-              </div>
-            </div>
-            <div className="d-flex align-items-center p-1 m-0">
-              <div className="py-2 px-3 rounded d-flex me-3">
-                <i className="fa-brands fa-whatsapp fs-3 text-dark"></i>
-              </div>
-              <div className="d-flex flex-column">
-                Celular:
-                <small>+56 9 4129 0755</small>
-              </div>
+                  <a href={`tel: ${data.contact.phone}`} className="text-decoration-none text-dark">+{data.contact.phone}</a>
             </div>
           </Col>
           <Col xs={12} md={6}>
