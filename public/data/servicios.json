@@ -4,14 +4,34 @@
     "Soluciones para empresas",
     "Asesorías, en desarrollo de software"
   ],
-
   "servicios": [
     {
       "id": "S001",
       "title": "Software de Condominios",
-      "desc": "Optimiza la gestión de tu condominio con nuestro software personalizado. Nuestro sistema incluye funcionalidades como:<br><span style='color: #ff8'>Control de Residentes</span><br><span style='color: #ff8'>Control de Visitas</span>",
-      "img": "apartment.png",
-      "img2": "apartment.png"
+      "desc": "Optimiza la gestión de tu condominio con nuestro software personalizado. Nuestro sistema incluye funcionalidades como:<br><span style='color: #588; font-weight: bold'>Control de Residentes</span><br><span style='color: #588; font-weight: bold'>Control de Visitas</span><br><span style='color: #588; font-weight: bold'>Control de Encomiendas</span><br>y más",
+      "img": "condominios.png",
+      "img2": "condominios.png"
+    },
+    {
+      "id": "S002",
+      "title": "Diseño y desarrollo Web",
+      "desc": "Ofrecemos un servicio de diseño web integral que combina <span style='color: #588; font-weight: bold'>estética moderna y funcionalidad</span>. Creamos sitios <span style='color: #588; font-weight: bold'>responsivos y optimizados para SEO</span>, adaptados a las necesidades específicas de cada cliente y así asegurar que el resultado final refleje la visión y objetivos de tu marca.",
+      "img": "diseno-grafico.png",
+      "img2": "diseno-grafico.png"
+    },
+    {
+      "id": "S003",
+      "title": "Asesoría y Consultoría",
+      "desc": "Esta asesoría va dirigida principalmente a empresas y emprendedores, que quieran aprender más sobre tecnologías y transformación digital, o resolver problemas de gestión que requieran una solución moderna.",
+      "img": "asesoramiento.png",
+      "img2": "asesoramiento.png"
+    },
+    {
+      "id": "S004",
+      "title": "Ecommerce",
+      "desc": "Desarrollamos ecommerce que cuentan con todas las funcionalidades claves para el éxito de negocio. Incluye carrito de compras, inventario, herramienta de análisis para rastrear el comporamiento del cliente",
+      "img": "e-commerce.png",
+      "img2": "e-commerce.png"
     }
   ]
 }

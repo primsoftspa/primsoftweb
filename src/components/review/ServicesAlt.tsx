@@ -62,7 +62,9 @@ export default function ReviewServiceAlt() {
       >
         {
           services.map((service) => (
-            <SwiperSlide key={service.id}>
+            <SwiperSlide key={service.id} style={{
+              background: "transparent"
+            }}>
               <CardRb image={service.img}
                       title={service.title}
                       image2={service.img2}

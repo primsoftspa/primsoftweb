@@ -35,7 +35,7 @@ export default ({
       <p>${description}</p>
       <a href="${sendMail}"
         target="_blank"
-        class="btn btn-gray w-100 my-3">
+        class="btn btn-dark w-100 my-3">
         Cotizar 
       </a>
     `,
@@ -54,7 +54,11 @@ export default ({
       <Card.Img
         variant="top"
         src={image}
-        className="d-block card-img-service rounded-circle border border-2 w-75 mx-auto m-3"
+        className="d-block card-img-service w-75 mx-auto m-3"
+        style={{
+          height: "150px",
+          objectFit: "contain"
+        }}
       />
       <Card.Body>
         <Card.Title className="text-center fs-5">{title}</Card.Title>

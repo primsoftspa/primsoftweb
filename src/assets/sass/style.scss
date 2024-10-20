@@ -251,7 +251,17 @@ details[open] summary::before {
     }
   }
 }
-
+.navbar-toggler {
+  position: relative;
+}
+.navbar-toggler:before {
+  content: "menu";
+  position: absolute;
+  left: -65px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
 
 // MOBILE
 .heroNav {

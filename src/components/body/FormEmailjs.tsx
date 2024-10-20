@@ -87,14 +87,14 @@ export default () => {
       <FloatingLabel controlId="floatingTextarea2" label="su mensaje">
         <Form.Control
           as="textarea"
-          placeholder="su mensaje"
+          placeholder="Mensaje"
           style={{ height: "100px" }}
           name="message"
           className="shadow-sm"
           required
         />
       </FloatingLabel>
-      <Button variant="info" type="submit" className="mt-3 w-100 p-2">
+      <Button variant="dark" type="submit" className="mt-4 w-100 p-2 text-white shadow-sm">
         Enviar
       </Button>
     </Form>

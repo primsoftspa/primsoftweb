@@ -16,7 +16,6 @@ export default () => {
         letterSpacing: "3px"
       }}>{data.name}</h2>
       <ReviewService />
-      <ReviewClientes />
     </section>
     </>
   );

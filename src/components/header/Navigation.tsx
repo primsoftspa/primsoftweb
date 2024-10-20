@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/logos/primsoft.svg"
 
 export default () => {
   const location = useLocation();
@@ -21,9 +22,10 @@ export default () => {
       <Container>
         {/* Logo Brand */}
         <Navbar.Brand as={Link} to="/" className='py-4'>
-          PrimSoft
+          <img src={logo} alt="logo" height="50" style={{
+          }}/> <span className='d-none d-lg-inline'>PrimSoft</span>
         </Navbar.Brand>
-        <Navbar.Toggle onClick={handleToggle} aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle onClick={handleToggle} aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-uppercase">
             <Nav.Link onClick={handleSelect} as={Link} to="/" className={location.pathname === "/" ? "active" : ""}>Inicio</Nav.Link>
