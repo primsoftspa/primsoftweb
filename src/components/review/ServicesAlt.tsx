@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Container } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import Button from "../Button/Button";
 import CardRb from "../body/Card";
 import {useAppContext} from '../../context/AppCtx'
@@ -29,7 +29,6 @@ export default function ReviewServiceAlt() {
       <h5 className="fs-5 mb-5 text-uppercase"
       style={{color: "#888"}}>la solución para cada requerimiento logístico</h5>
       <Swiper
-        spaceBetween={10}
         breakpoints={{
           // when window width is >= 640 px
           320: {
@@ -64,7 +63,8 @@ export default function ReviewServiceAlt() {
         {
           services.map((service) => (
             <SwiperSlide key={service.id} style={{
-              background: "transparent"
+              background: "transparent",
+              padding: "0 20px"
             }}>
               <CardRb image={service.img}
                       title={service.title}
