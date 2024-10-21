@@ -14,18 +14,23 @@ export default () => {
         subtitle="Soluciones integrales, asesoría y más"
         image={bgServicio}
       />
-      <section className="bg-light bg-gradient animate__animated animate__fadeIn">
-
+      <section className="animate__animated animate__fadeIn pb-5" style={
+        {
+           background: "linear-gradient(to right, #111 40%, #111)"
+        }
+      }>
   
         <h3 className="text-uppercase text-center bg-dark text-gray py-2">
           ¿Qué ofrecemos?
         </h3>
-        <p className="p-1 p-lg-3 text-center">En nuestra agencia, ofrecemos una amplia gama de servicios para satisfacer tus necesidades tecnológicas.</p>
-        <ListGroup>
+        <p className="p-1 p-lg-3 text-center text-light">En nuestra agencia, ofrecemos una amplia gama de servicios para satisfacer tus necesidades tecnológicas:</p>
+        <Col xs={10} md={6} className="mx-auto">
+        <ListGroup data-bs-theme="dark" className="">
           {nameServices.map((servicio) => {
             return <ListGroup.Item key={servicio}>{servicio}</ListGroup.Item>;
           })}
         </ListGroup>
+        </Col>
         {/* <Container fluid="md" className="py-5">
           <Row>
             {services.map((service) => {

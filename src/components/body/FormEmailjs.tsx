@@ -42,7 +42,7 @@ export default () => {
   };
 
   return (
-    <Form method="POST" id="form" onSubmit={handleSubmit}>
+    <Form method="POST" id="form" onSubmit={handleSubmit} data-bs-theme="dark" className="text-gray">
       <FloatingLabel
         controlId="floatingInput"
         label="Su nombre"
@@ -64,7 +64,7 @@ export default () => {
           placeholder="Su teléfono"
           aria-label="Username"
           aria-describedby="basic-addon1"
-          className="p-3"
+          className="p-3 bg-dark text-gray"
           name="phone"
           type="tel"
         />
@@ -94,7 +94,7 @@ export default () => {
           required
         />
       </FloatingLabel>
-      <Button variant="dark" type="submit" className="mt-4 w-100 p-2 text-white shadow-sm">
+      <Button variant="info" type="submit" className="mt-4 w-100 p-2 px-4 text-white shadow-sm rounded-pill">
         Enviar
       </Button>
     </Form>

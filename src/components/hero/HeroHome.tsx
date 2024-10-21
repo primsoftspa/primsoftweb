@@ -9,7 +9,7 @@ const TypedText = () => {
     const options = {
       strings: [
         '<span style="color: white;">Desarrollo de Software</span>',
-        '<span style="color: yellow;">Soluciones Innovadoras</span>',
+        '<span style="color: cyan;">Soluciones Innovadoras</span>',
         '<span style="color: peru;">Transformación Digital</span>',
       ],
       typeSpeed: 60,
@@ -29,7 +29,7 @@ const TypedText = () => {
     };
   }, []);
 
-  return <span ref={el} className="fs-3"/>; // Usar la referencia en el elemento
+  return <span ref={el} className="fs-2"/>; // Usar la referencia en el elemento
 };
 
 
@@ -48,7 +48,7 @@ export default () => {
             overflow: 'hidden',
             minWidth: '100%'
           }}>
-          <h3 className='carousel-title animate__animated animate__zoomIn animate__delay-1s fw-bold freeman-regular text-info'>PrimSoft</h3>
+          <h2 className='animate__animated animate__zoomIn animate__delay-1s fw-bold freeman-regular text-info display-1'>PrimSoft</h2>
           {/* <p className='p1 fs-2 fw-normal animate__animated animate__fadeIn animate__delay-2s animate__slow text-gray'>Impulsa tu futuro digital</p> */}
           <TypedText />
         </div>

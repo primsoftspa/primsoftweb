@@ -7,12 +7,13 @@ function Contacto() {
 
     const navigate = useNavigate();
     return (
-        <React.Fragment>
+        <>
             <Row className="align-items-center flex-column text-center text-light" style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, .6), rgba(0,  0, 0, 1)), url(${contactoImg})`,
-                backgroundPosition: 'center',
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url(${contactoImg})`,
+                backgroundPosition: 'top center',
+                backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
-                padding: '110px 0'
+                padding: '200px 0'
             }}>
                 <Col>
                     <h3 className='fs-1 fw-bold' style={{
@@ -30,7 +31,7 @@ function Contacto() {
                         onClick={() => navigate('contacto')}>CONTÁCTENOS</Button>
                 </Col>
             </Row>
-        </React.Fragment>
+        </>
     )
 }
 

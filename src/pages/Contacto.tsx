@@ -9,9 +9,11 @@ export default () => {
   return (
     <>
       {/* Contact Section */}
-      <Container fluid className="animate__animated animate__fadeIn" as="section">
+      <Container fluid className="animate__animated animate__fadeIn" as="section" style={{
+        background: "linear-gradient(to right, #111 40%, #222)"
+      }}>
         <Row className="align-items-center">
-          <Col xs={12} md={6} className="py-5" style={{background: "#111"}}>
+          <Col xs={12} md={6} className="py-5">
             <p className="text-gray">
               Realice todas sus consultas a través de nuestro formulario, o
               contactenos por medio de los siguientes medios:
@@ -47,7 +49,7 @@ export default () => {
             </div>
           </Col>
           <Col xs={12} md={6} className="py-5 py-lg-0">
-            <p>Déjanos tus datos. Un ejecutivo de PrimSoft te contactará en unos momentos.</p>
+            <p className="text-gray">Déjanos tus datos. Un ejecutivo de PrimSoft te contactará en unos momentos.</p>
             <FormEmailjs />
           </Col>
         </Row>

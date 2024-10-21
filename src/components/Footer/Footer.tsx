@@ -10,7 +10,7 @@ const gradientStyles: React.CSSProperties = {
 export default () => {
     return (
         <Row style={{ background: "#000" }}>
-            <p className="py-3 fs-5 m-0 text-center text-light">
+            <p className="py-3 m-0 text-center text-light">
                 &copy; <span className="fs-5" style={gradientStyles}>{new Date().getFullYear()} PrimSoft SpA. Todos los derechos reservados.</span>
             </p>
         </Row>

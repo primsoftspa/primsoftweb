@@ -46,22 +46,27 @@ export default ({
     <Card
       className={
         light
-          ? "h-100 pointer bg-light text-dark border-0"
+          ? "pointer bg-dark text-gray border-0 w-100"
           : "h-100 pointer bg-secondary text-gray border-0 hover-card"
       }
       onClick={showModal}
+      style={
+        {
+          height: "300px"
+        }
+      }
     >
       <Card.Img
         variant="top"
         src={image}
         className="d-block card-img-service w-75 mx-auto m-3"
         style={{
-          height: "150px",
-          objectFit: "contain"
+          objectFit: "contain",
+          height: "180px"
         }}
       />
       <Card.Body>
-        <Card.Title className="text-center fs-5">{title}</Card.Title>
+        <Card.Title className="text-center">{title}</Card.Title>
       </Card.Body>
     </Card>
   );

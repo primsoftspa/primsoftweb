@@ -6,7 +6,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import Button from "../Button/Button";
 import CardRb from "../body/Card";
 import {useAppContext} from '../../context/AppCtx'
 
@@ -23,7 +24,7 @@ export default function ReviewServiceAlt() {
 
   return (
     <Container fluid className="my-4 text-center w-100">
-      <h4 className="text-center my-3 text-uppercase fs-3 fw-bold"
+      <h4 className="text-center my-3 text-uppercase display-6 fw-bold text-white"
       style={{letterSpacing: "4px",color: "#444"}}>nuestros servicios</h4>
       <h5 className="fs-5 mb-5 text-uppercase"
       style={{color: "#888"}}>la solución para cada requerimiento logístico</h5>
@@ -75,7 +76,7 @@ export default function ReviewServiceAlt() {
         }
         <SwiperControl navigationNextRef={navigationNextRef} navigationPrevRef={navigationPrevRef}/>
       </Swiper>
-        <Button variant="dark" className="w-50 mt-5" onClick={() => navigate("servicios")}>Ver Más</Button>
+      <Button variant="info" label="Ver Más" onClick={() => navigate("servicios")} />
     </Container>
   );
 }

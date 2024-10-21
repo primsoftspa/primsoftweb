@@ -9,7 +9,7 @@ type Props = {
 
 export default ({ onClick, label, variant }: Props) => {
   return (
-    <Button variant={variant} onClick={onClick}>
+    <Button variant={variant} onClick={onClick} className='rounded-pill py-3 px-5 my-3'>
       {label}
     </Button>
   );
