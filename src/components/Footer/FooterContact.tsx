@@ -15,13 +15,13 @@ export default () => {
                 <Stack>
                     <h3 style={borderStyles} className="">{data.name}</h3>
                     <div>
-                       <Link to="/servicios" className='link'> 
+                       <Link to="#" className='link'> 
                         <i className="fa-solid fa-link me-2"></i>
                         <small>Preguntas frecuentes</small>
                        </Link>
                     </div>
                     <div>
-                       <Link to="/empresa" className='link'> 
+                       <Link to="#" className='link'> 
                         <i className="fa-solid fa-link me-2"></i>
                         <small>Objetivo y Valores</small>
                        </Link>
