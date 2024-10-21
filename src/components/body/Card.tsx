@@ -46,7 +46,7 @@ export default ({
     <Card
       className={
         light
-          ? "pointer bg-dark text-gray border-0 w-100"
+          ? "pointer bg-dark text-gray border-0 w-100 rounded"
           : "h-100 pointer bg-secondary text-gray border-0 hover-card"
       }
       onClick={showModal}

@@ -46,9 +46,9 @@ export default () => {
                 name="Cristobal"
                 profesion="Developer"
                 src="https://robohash.org/31"
-                linkedin={data.mch.linkedin}
-                web={data.mch.web}
-                email={data.mch.email} />
+                linkedin={data.cta.linkedin}
+                web={data.cta.web}
+                email={data.cta.email} />
               </SwiperSlide>
             </SwiperCarousel>
           </Row>
