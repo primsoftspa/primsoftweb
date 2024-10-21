@@ -4,6 +4,16 @@
     "email": "contacto@primsoft.cl",
     "phone": "569 57890753"
   },
+  "cta": {
+    "email": "cta-devteam@primsoft.cl",
+    "web": "https://ctalvarez.dev",
+    "linkedin": "https://www./linkedIn.com/in/crisnta"
+  },
+  "mch": {
+    "email": "mch-devteam@primsoft.cl",
+    "web": "https://mcherrera.dev",
+    "linkedin": "https://www.linkedin.com/in/mcontreras-h/"
+  },
   "social": {
     "facebook": "https://facebook.com",
     "twitter": "https://twitter.com",
