@@ -32,24 +32,18 @@ export default () => {
             <h2 className="display-5 fw-bold text-center text-info">Nuestros Desarrolladores</h2>
             <p className="text-center fs-4 mt-2 mb-5 text-gray">Un equipo apasionado y talentoso que da vida a tus ideas</p>
             <SwiperCarousel>
-            <SwiperSlide className="pb-5 bg-transparent">
-              <UserCard
-                name="Marco"
-                profesion="Developer"
-                src="https://mcherrera.dev/assets/img/perfil.png"
-                linkedin={data.mch.linkedin}
-                web={data.mch.web}
-                email={data.mch.email} />
+              {data.team.map(member => (
+                <SwiperSlide className="pb-5 bg-transparent" key={member.id}>
+                  <UserCard
+                    name={member.name}
+                    profesion={member.profession}
+                    src={member.avatar}
+                    linkedin={member.linkedin}
+                    web={member.web}
+                    email={member.email} />
               </SwiperSlide>
-            <SwiperSlide className="pb-5 bg-transparent">
-              <UserCard 
-                name="Cristobal"
-                profesion="Developer"
-                src="https://robohash.org/31"
-                linkedin={data.cta.linkedin}
-                web={data.cta.web}
-                email={data.cta.email} />
-              </SwiperSlide>
+
+                ))}
             </SwiperCarousel>
           </Row>
         </Container>
