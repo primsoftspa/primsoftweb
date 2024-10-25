@@ -37,7 +37,7 @@ export default () => {
       })
       .catch((err) => {
         console.log(err),
-          alert("Ocurrió un error por parte de nuestro servicio")
+          alert("Pasar la prueba de captcha")
       });
   };
 
@@ -94,8 +94,8 @@ export default () => {
           required
         />
       </FloatingLabel>
-      <div className="g-recaptcha border-0 my-3" data-sitekey="6LdZ9WsqAAAAABTiA1RZb0xoFpIMVuzd6oY0kZWG" data-theme="dark"></div>
-      <Button variant="info" type="submit" className="mt-4 w-100 p-2 px-4 text-white shadow-sm rounded-pill">
+      <div className="g-recaptcha border-0 my-3" id="captcha_element"></div>
+      <Button variant="info" type="submit" className="w-100 p-2 px-4 text-white shadow-sm rounded-pill mb-3">
         Enviar
       </Button>
     </Form>

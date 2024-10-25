@@ -13,12 +13,21 @@
   <meta name="apple-mobile-web-app-title" content="PrimSoft" />
   <link rel="manifest" href="assets/favicons/site.webmanifest" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="text/javascript">
+    var onloadCallback = function () {
+      grecaptcha.render('captcha_element', {
+        'sitekey': '6LdZ9WsqAAAAABTiA1RZb0xoFpIMVuzd6oY0kZWG'
+      });
+    };
+  </script>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
   <script src="https://kit.fontawesome.com/6b8f0c7049.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+  </script>
 </body>
 
 </html>
