@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import InputGroup from 'react-bootstrap/InputGroup';
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 export default () => {
@@ -94,7 +95,7 @@ export default () => {
           required
         />
       </FloatingLabel>
-      <div className="g-recaptcha border-0 my-3" id="captcha_element"></div>
+      <ReCAPTCHA sitekey="6LdZ9WsqAAAAABTiA1RZb0xoFpIMVuzd6oY0kZWG" className="my-3" />
       <Button variant="info" type="submit" className="w-100 p-2 px-4 text-white shadow-sm rounded-pill mb-3">
         Enviar
       </Button>
