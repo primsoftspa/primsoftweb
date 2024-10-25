@@ -94,12 +94,10 @@ export default () => {
           required
         />
       </FloatingLabel>
+      <div className="g-recaptcha border-0 my-3" data-sitekey="6LdZ9WsqAAAAABTiA1RZb0xoFpIMVuzd6oY0kZWG" data-theme="dark"></div>
       <Button variant="info" type="submit" className="mt-4 w-100 p-2 px-4 text-white shadow-sm rounded-pill">
         Enviar
       </Button>
-      <div className="text-center">
-        <div className="g-recaptcha" data-sitekey="6LdZ9WsqAAAAABTiA1RZb0xoFpIMVuzd6oY0kZWG" data-theme="dark"></div>
-      </div>
     </Form>
   );
 };
