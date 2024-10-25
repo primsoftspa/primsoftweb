@@ -43,6 +43,8 @@ export default () => {
 
   return (
     <Form method="POST" id="form" onSubmit={handleSubmit} data-bs-theme="dark" className="text-gray">
+      <div className="g-recaptcha" data-sitekey="6LdZ9WsqAAAAABTiA1RZb0xoFpIMVuzd6oY0kZWG
+" data-theme="dark"></div>
       <FloatingLabel
         controlId="floatingInput"
         label="Su nombre"
