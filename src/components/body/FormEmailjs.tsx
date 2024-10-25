@@ -52,7 +52,7 @@ export default () => {
         <Form.Control
           type="text"
           placeholder="Su nombre"
-          name="name"
+          name="nombre"
           className="shadow-sm"
           required
         />
@@ -62,10 +62,10 @@ export default () => {
         <InputGroup.Text id="basic-addon1">+56</InputGroup.Text>
         <Form.Control
           placeholder="Su teléfono"
-          aria-label="Username"
+          aria-label="Teléfono"
           aria-describedby="basic-addon1"
           className="p-3 bg-dark text-gray"
-          name="phone"
+          name="telefono"
           type="tel"
         />
       </InputGroup>
@@ -89,7 +89,7 @@ export default () => {
           as="textarea"
           placeholder="Mensaje"
           style={{ height: "100px" }}
-          name="message"
+          name="mensaje"
           className="shadow-sm"
           required
         />
