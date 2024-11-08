@@ -30,6 +30,7 @@
     "@types/react": "^18.0.17",
     "@types/react-bootstrap": "^0.32.32",
     "@types/react-dom": "^18.0.6",
+    "@types/react-google-recaptcha": "^2.1.9",
     "@types/react-lazy-load-image-component": "^1.5.2",
     "@types/react-router-dom": "^5.3.3",
     "@types/sweetalert": "^2.0.4",

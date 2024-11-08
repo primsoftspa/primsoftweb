@@ -17,7 +17,7 @@ export default () => {
       }}>
         <HeroHome />
         <h2
-          className="display-4 fw-bold my-5 text-center text-info"
+          className="display-4 fw-bold my-5 text-center text-normal"
           style={{
             letterSpacing: "3px",
           }}
@@ -30,7 +30,7 @@ export default () => {
           // backgroundImage: `linear-gradient(to top, rgba(1, 1, 2, .6), rgba(0,  0, 0, 1))`
         }}>
           <Row className="justify-content-center py-5">
-            <h2 className="display-4 fw-bold text-gray text-center mb-2">Desarrolladores</h2>
+            <h2 className="display-4 fw-bold text-normal text-center mb-4">TEAM DEVELOPER</h2>
             <p className="text-center fs-4 mt-2 mb-5 text-gray">Un equipo apasionado y talentoso que da vida a tus ideas</p>
             <SwiperCarousel>
               {data.team.map(member => (
@@ -47,7 +47,6 @@ export default () => {
               ))}
             </SwiperCarousel>
             <Container className="my-5">
-              <h3 className="display-5 text flickering mb-1" style={{ color: "#ccc4" }}>Design Tools</h3>
               <Row className="overflow-hidden flex-nowrap scroll-container">
                 <CardSmall direction="left" title="html" subtitle="user interface" image="https://raw.githubusercontent.com/EniDev911/assets/refs/heads/main/images/svg/programming/html5.svg" />
                 <CardSmall direction="left" title="css3" image="https://raw.githubusercontent.com/EniDev911/assets/refs/heads/main/images/svg/programming/css3.svg" />
@@ -58,7 +57,7 @@ export default () => {
                 <CardSmall direction="left" title="tailwindcss" subtitle="css framework" image="https://raw.githubusercontent.com/primsoftspa/activos/refs/heads/main/tailwindcss.svg" />
                 <CardSmall direction="left" title="bootstrap" subtitle="css framework" image="https://raw.githubusercontent.com/EniDev911/assets/refs/heads/main/images/svg/programming/bootstrap.svg" />
               </Row>
-              <h3 className="display-3 text-end" style={{ color: "#ccc2" }}>Programming Tools</h3>
+              <h3 className="display-5 text flickering text-center" style={{ color: "#ccc2" }}>Programming Tools</h3>
               <Row className="overflow-hidden flex-nowrap scroll-container">
                 <CardSmall direction="right" title="ruby" subtitle="programming" image="https://raw.githubusercontent.com/EniDev911/assets/refs/heads/main/svg/software/ruby.svg" />
                 <CardSmall direction="right" title="rails" subtitle="framework web" image="https://raw.githubusercontent.com/EniDev911/assets/refs/heads/main/svg/software/ruby-on-rail.svg" />
