@@ -6,7 +6,7 @@ export default () => {
   return (
     <Navbar style={{
       background: "linear-gradient(to right, #111 40%, #222)",
-      }} className="d-none d-lg-block border-gradient border-gradient-purple p-0">
+    }} className="d-none d-lg-block border-gradient border-gradient-esmeral p-0">
       <Container>
         <Nav className="me-auto">
           <Navbar.Text className="me-3">
@@ -38,7 +38,7 @@ export default () => {
               <i className="fa-brands fa-instagram text-danger"></i>&nbsp;&nbsp;
               {data.social.instagram.user}
             </a>
-          </Navbar.Text> 
+          </Navbar.Text>
         </Nav>
       </Container>
     </Navbar>

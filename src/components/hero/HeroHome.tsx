@@ -10,7 +10,7 @@ const TypedText = () => {
       strings: [
         '<span style="color: white;">Desarrollo de Software</span>',
         '<span style="color: cyan;">Soluciones Innovadoras</span>',
-        '<span style="color: peru;">Transformación Digital</span>',
+        '<span style="color: #7be8c4;">Transformación Digital</span>',
       ],
       typeSpeed: 60,
       backSpeed: 25,
@@ -38,7 +38,7 @@ export default () => {
     <>
       {/* FIRST SLIDE */}
       <div className='w-100 p-5 slide text-light bg-hero'>
-        <h2 className='animate__animated animate__zoomIn animate__delay-1s fw-bold freeman-regular text-info display-1'>PrimSoft</h2>
+        <h2 className='animate__animated animate__zoomIn animate__delay-1s fw-bold text display-1'>PrimSoft</h2>
         {/* <p className='p1 fs-2 fw-normal animate__animated animate__fadeIn animate__delay-2s animate__slow text-gray'>Impulsa tu futuro digital</p> */}
         <TypedText />
       </div>

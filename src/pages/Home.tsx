@@ -16,14 +16,14 @@ export default () => {
         background: "linear-gradient(to right, #111 40%, #222)"
       }}>
         <HeroHome />
-        <h2
+        {/* <h2
           className="display-4 fw-bold my-5 text-center text-normal"
           style={{
             letterSpacing: "3px",
           }}
         >
           {data.name}
-        </h2>
+        </h2> */}
         <ReviewService />
         <Container fluid style={{
           // background: "linear-gradient(to top, #F5F5F5, #B2EBF2 1%, #f8f9fa)"

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import data from "../../data/contacto.json";
 
 const borderStyles: React.CSSProperties = {
-  borderLeft: "3px solid #49f",
-  paddingLeft: "14px",
-  color: "#fff"
+    borderLeft: "3px solid #7ce8c5",
+    paddingLeft: "14px",
+    color: "#fff"
 };
 
 export default () => {
@@ -15,16 +15,16 @@ export default () => {
                 <Stack>
                     <h3 style={borderStyles} className="">{data.name}</h3>
                     <div>
-                       <Link to="#" className='link'> 
-                        <i className="fa-solid fa-link me-2"></i>
-                        <small>Preguntas frecuentes</small>
-                       </Link>
+                        <Link to="#" className='link'>
+                            <i className="fa-solid fa-link me-2"></i>
+                            <small>Preguntas frecuentes</small>
+                        </Link>
                     </div>
                     <div>
-                       <Link to="#" className='link'> 
-                        <i className="fa-solid fa-link me-2"></i>
-                        <small>Objetivo y Valores</small>
-                       </Link>
+                        <Link to="#" className='link'>
+                            <i className="fa-solid fa-link me-2"></i>
+                            <small>Objetivo y Valores</small>
+                        </Link>
                     </div>
                 </Stack>
             </Col>

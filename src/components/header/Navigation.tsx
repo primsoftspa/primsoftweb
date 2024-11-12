@@ -16,16 +16,16 @@ export default () => {
   const handleSelect = () => {
     setExpanded(false);
   };
-  
+
   return (
     <Navbar expand="lg" variant="dark" className='bg-night' expanded={expanded}>
       <Container>
         {/* Logo Brand */}
         <Navbar.Brand as={Link} to="/" className='py-4'>
           <img src={logo} alt="logo" height="50" style={{
-          }}/> <span className='d-none d-lg-inline'>PrimSoft</span>
+          }} /> <span className='d-none d-lg-inline freeman-regular'>Prim<span className=''>Soft</span></span>
         </Navbar.Brand>
-        <Navbar.Toggle onClick={handleToggle} aria-controls="basic-navbar-nav"/>
+        <Navbar.Toggle onClick={handleToggle} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto text-uppercase">
             <Nav.Link onClick={handleSelect} as={Link} to="/" className={location.pathname === "/" ? "active" : ""}>Inicio</Nav.Link>

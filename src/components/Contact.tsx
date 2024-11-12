@@ -16,16 +16,16 @@ function Contacto() {
                 padding: '200px 0'
             }}>
                 <Col>
-                    <h3 className='fs-1 fw-bold' style={{
+                    <h3 className='display-4 fw-bold text-normal' style={{
                         background: "rgba(0, 0, 0, .2)",
                         backdropFilter: "blur(5px)"
                     }}>HABLEMOS</h3>
                 </Col>
                 <Col>
-                    <p className="fs-3 text-info">Envíenos sus requerimientos</p>
+                    <p className="fs-3 text-primary">Envíenos sus requerimientos</p>
                 </Col>
                 <Col>
-                    <Button variant="outline-light"
+                    <Button variant="outline-primary"
                         className="rounded-2"
                         size="lg"
                         onClick={() => navigate('contacto')}>CONTÁCTENOS</Button>

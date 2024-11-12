@@ -9,13 +9,15 @@
   // --black-color: hsl(29, 16%, 10%);
   // --text-color: hsl(29, 8%, 65%);
   // --body-color: hsl(29, 100%, 99%);
-    --first-color: hsl(184, 98%, 41%);
-    --first-color-light: hsl(212, 60%, 60%);
-    --black-color: hsl(203, 93%, 23%);
-    --text-color: hsl(29, 8%, 65%);
-    --body-color: hsl(29, 100%, 99%);
-    --body-shadow: hsla(198, 85%, 10%, 0.2);
-    --border-color: hsla(184, 98%, 41%, 0.19);
+  // --first-color: hsl(184, 98%, 41%);
+  --first-color: #7ce8c5;
+  --first-color-light: hsl(212, 60%, 60%);
+  // --black-color: hsl(203, 93%, 23%);
+  --black-color: hsl(203, 93%, 23%);
+  --text-color: hsl(29, 8%, 65%);
+  --body-color: hsl(29, 100%, 99%);
+  --body-shadow: hsla(198, 85%, 10%, 0.2);
+  --border-color: hsla(184, 98%, 41%, 0.19);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
@@ -50,7 +52,7 @@
 .card__border {
   // width: 110px;
   // height: 110px;
-  border: 2px solid var(--first-color);
+  border: 1px solid var(--first-color);
   border-radius: 50%;
   display: grid;
   place-items: center;

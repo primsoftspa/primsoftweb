@@ -3,12 +3,13 @@ $font-stack: Helvetica, sans-serif;
 
 
 // Colors
-$primary-color: #222222;
+$primary-color: #7ce8c5;
+$primary: #7ce8c5;
 $primary-color-light: #0dcaf0;
 $secondary-color: #dc3545;
 $gray-light: #eeeeee;
 $white-light: #ffffff;
-$success: #2f9024; 
+$success: #2f9024;
 
 // Typography
 $font-family-sans-serif: system-ui,
@@ -25,4 +26,3 @@ $font-family-sans-serif: system-ui,
     "Noto Color Emoji",
     "Segoe UI Symbol" !default;
 $font-family-base: $font-family-sans-serif !default;
-

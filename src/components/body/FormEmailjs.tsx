@@ -43,62 +43,64 @@ export default () => {
   };
 
   return (
-    <Form method="POST" id="form" onSubmit={handleSubmit} data-bs-theme="dark" className="text-gray">
-      <FloatingLabel
-        controlId="floatingInput"
-        label="Su nombre"
-        className="mb-3"
-      >
-        {/* FIELD NAME  */}
-        <Form.Control
-          type="text"
-          placeholder="Su nombre"
-          name="nombre"
-          className="shadow-sm"
-          required
-        />
-      </FloatingLabel>
-      {/* PHONE FIELD */}
-      <InputGroup className="mb-3 shadow-sm rounded">
-        <InputGroup.Text id="basic-addon1">+56</InputGroup.Text>
-        <Form.Control
-          placeholder="Su teléfono"
-          aria-label="Teléfono"
-          aria-describedby="basic-addon1"
-          className="p-3 bg-dark text-gray"
-          name="telefono"
-          type="tel"
-        />
-      </InputGroup>
-      {/* FIELD EMAIL */}
-      <FloatingLabel
-        controlId="floatingEmail"
-        label="Su email"
-        className="mb-3"
-      >
-        <Form.Control
-          type="email"
-          placeholder="Su email"
-          name="email"
-          className="shadow-sm"
-          required
-        />
-      </FloatingLabel>
-      {/* FIELD MESSAGE */}
-      <FloatingLabel controlId="floatingTextarea2" label="su mensaje">
-        <Form.Control
-          as="textarea"
-          placeholder="Mensaje"
-          style={{ height: "100px" }}
-          name="mensaje"
-          className="shadow-sm"
-          required
-        />
-      </FloatingLabel>
-      <ReCAPTCHA sitekey="6LdZ9WsqAAAAABTiA1RZb0xoFpIMVuzd6oY0kZWG" className="my-3" />
-      <Button variant="info" type="submit" className="w-100 p-2 px-4 text-white shadow-sm rounded-pill mb-3">
-        Enviar
-      </Button>
-    </Form>
+    <>
+      <Form method="POST" id="form" onSubmit={handleSubmit} data-bs-theme="dark" className="text-gray">
+        <FloatingLabel
+          controlId="floatingInput"
+          label="Su nombre"
+          className="mb-3"
+        >
+          {/* FIELD NAME  */}
+          <Form.Control
+            type="text"
+            placeholder="Su nombre"
+            name="nombre"
+            className="shadow-sm"
+            required
+          />
+        </FloatingLabel>
+        {/* PHONE FIELD */}
+        <InputGroup className="mb-3 shadow-sm rounded">
+          <InputGroup.Text id="basic-addon1">+56</InputGroup.Text>
+          <Form.Control
+            placeholder="Su teléfono"
+            aria-label="Teléfono"
+            aria-describedby="basic-addon1"
+            className="p-3 bg-dark text-gray"
+            name="telefono"
+            type="tel"
+          />
+        </InputGroup>
+        {/* FIELD EMAIL */}
+        <FloatingLabel
+          controlId="floatingEmail"
+          label="Su email"
+          className="mb-3"
+        >
+          <Form.Control
+            type="email"
+            placeholder="Su email"
+            name="email"
+            className="shadow-sm"
+            required
+          />
+        </FloatingLabel>
+        {/* FIELD MESSAGE */}
+        <FloatingLabel controlId="floatingTextarea2" label="su mensaje">
+          <Form.Control
+            as="textarea"
+            placeholder="Mensaje"
+            style={{ height: "100px" }}
+            name="mensaje"
+            className="shadow-sm"
+            required
+          />
+        </FloatingLabel>
+        <ReCAPTCHA sitekey="6LdZ9WsqAAAAABTiA1RZb0xoFpIMVuzd6oY0kZWG" className="my-3" />
+        <Button variant="primary" type="submit" className="w-100 p-2 px-4 shadow-sm rounded-pill mb-3">
+          Enviar
+        </Button>
+      </Form>
+    </>
   );
 };

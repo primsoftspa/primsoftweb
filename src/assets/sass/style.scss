@@ -1,9 +1,10 @@
 @use 'utilities';
 @use 'rocket';
 @use 'card';
-
+@use 'variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
 
 $font-family-sans-serif: 'Poppins', Neucha, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 
@@ -48,6 +49,10 @@ $font-family-sans-serif: 'Poppins', Neucha, -apple-system, system-ui, BlinkMacSy
   margin: 25px 0;
   // -webkit-text-stroke: 2px var(--neon-1);
   /* One actual shadow for depth, 5 glow layers */
+}
+
+.text-primary {
+  color: $primary;
 }
 
 .flickering {
@@ -204,7 +209,7 @@ a.link {
 
 .active {
   font-weight: bold;
-  border-bottom: 2px solid #0dcaf0 !important;
+  border-bottom: 2px solid $primary-color !important;
 }
 
 .logo {
@@ -410,8 +415,8 @@ details[open] summary::before {
   // border-width: 5px;
 }
 
-.border-gradient-purple {
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+.border-gradient-esmeral {
+  border-image-source: linear-gradient(to left, #6be5bc, #9cedd5);
 }
 
 .bg-night {

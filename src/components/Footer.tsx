@@ -1,10 +1,10 @@
 import { Row } from 'react-bootstrap';
 
 const gradientStyles: React.CSSProperties = {
-  marginBottom: '10px',
-  background: 'linear-gradient(90deg, #ffda00, #eef9f9)',
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
+    marginBottom: '10px',
+    background: 'linear-gradient(90deg, #7ce8c5, #eef9f9)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
 };
 
 export default () => {

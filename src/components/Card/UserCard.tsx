@@ -13,7 +13,7 @@ type Props = {
 /*=============== SHOW SOCIAL NETWORKS ===============*/
 
 
-export default ({name, profesion, src, linkedin, web, email}: Props) => {
+export default ({ name, profesion, src, linkedin, web, email }: Props) => {
 
   const socialRef = useRef<HTMLDivElement | null>(null);
   const showSocial = () => {
@@ -41,7 +41,7 @@ export default ({name, profesion, src, linkedin, web, email}: Props) => {
 
       <div className="card__social" id="card-social" ref={socialRef}>
         <div className="card__social-control">
-           {/* Toggle Button  */}
+          {/* Toggle Button  */}
           <div className="card__social-toggle" id="card-toggle" onClick={showSocial}>
             <i className="fa-solid fa-circle-plus"></i>
           </div>

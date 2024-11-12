@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Stack } from "react-bootstrap";
+import TypedText from "../ui/Typed/TypedText";
 
 type Props = {
   title: string;
-  subtitle?: string;
+  phrases: string[];
+  colors: string[];
   image: string;
 };
 
-export default ({ title, subtitle, image }: Props) => {
+export default ({ title, phrases, colors, image }: Props) => {
 
   const [source, setSource] = useState("")
   const [loadStyle, setLoadStyle] = useState({
@@ -23,7 +25,7 @@ export default ({ title, subtitle, image }: Props) => {
       setSource(image)
       setLoadStyle({
         ...loadStyle,
-        backgroundImage: `linear-gradient(290deg, rgba(210, 210, 220, .2) 10%, rgba(10, 20, 10, 1) 80%), url(${source})`
+        backgroundImage: `linear-gradient(290deg, rgba(210, 210, 220, .2) 10%, rgba(10, 20, 10, 1) 70%), url(${source})`
       })
     }
   }, [source])
@@ -33,11 +35,11 @@ export default ({ title, subtitle, image }: Props) => {
       style={loadStyle}
     >
       <h2
-        className="display-4 m-3 fw-bold text-light text-uppercase">
+        className="display-4 fw-bold text-light text-uppercase">
         {title}
       </h2>
-      <h4 className="px-3 m-3" style={{ color: "#ddd" }}>
-        {subtitle ? subtitle : 'Asociación Gremial de Dueños de Camiones de Coquimbo'}
+      <h4 className="mx-4">
+        <TypedText phrases={phrases} colors={colors} />
       </h4>
     </Stack>
   );

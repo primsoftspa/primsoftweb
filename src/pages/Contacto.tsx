@@ -21,20 +21,20 @@ export default () => {
             <br />
             <div className="d-flex align-items-center p-1 m-0">
               <div className="px-3">
-                <i className="fa-solid fa-envelope fs-3 text-info"></i>
+                <i className="fa-solid fa-envelope fs-3 text-primary"></i>
               </div>
-                <a
-              href={mailTo(data.contact.email, 'Cotizar servicios')}
-              className="text-decoration-none text-light"
-            >{data.contact.email}</a>
+              <a
+                href={mailTo(data.contact.email, 'Cotizar servicios')}
+                className="text-decoration-none text-light"
+              >{data.contact.email}</a>
             </div>
             <div className="d-flex align-items-center p-1 m-0">
               <div className="px-3">
-                <i className="fa-solid fa-phone fs-3 text-info"></i>
+                <i className="fa-solid fa-phone fs-3 text-primary"></i>
               </div>
-                  <a href={`tel: ${data.contact.phone}`} className="text-decoration-none text-light">+{data.contact.phone}</a>
+              <a href={`tel: ${data.contact.phone}`} className="text-decoration-none text-light">+{data.contact.phone}</a>
             </div>
-                        <div className="box-canvas">
+            <div className="box-canvas">
               <div className="wing left"></div>
               <div className="wing right"></div>
               <div className="rocket">
@@ -48,7 +48,7 @@ export default () => {
               <div className="wing-center"></div>
             </div>
           </Col>
-          <Col xs={12} md={6} className="py-5 py-lg-0">
+          <Col xs={12} md={6} className="py-0 py-lg-3">
             <p className="text-gray">Déjanos tus datos. Un ejecutivo de PrimSoft te contactará en unos momentos.</p>
             <FormEmailjs />
           </Col>
