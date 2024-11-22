@@ -37,5 +37,8 @@ jobs:
       - name: Build Project
         run: npm run build
 
+      - name: Create CNAME file
+        run: echo "primsoft.cl" > ./dist/CNAME
+
       - name: Deploy to Gh Pages
         run: npm run deploy
