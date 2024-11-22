@@ -1,0 +1,30 @@
+name: "Deploy Gh Pages"
+
+on:
+  branches:
+    push:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubutun-latest
+    steps:
+      - name: "Checkout Code"
+        uses: actions/checkout@v3
+
+      - name: Setup Node Js
+        uses: action/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy to Gh Pages
+        run: npm run deploy
