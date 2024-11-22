@@ -1,8 +1,8 @@
 name: "Deploy Gh Pages"
 
 on:
-  branches:
-    push:
+  push:
+    branches:
       - main
 
 permissions:
