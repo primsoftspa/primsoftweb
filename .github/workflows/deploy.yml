@@ -34,17 +34,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Set environment variables
+      - name: Verify environment variables
         run: |
-          echo "VITE_SERVICEID=${{ secrets.VITE_SERVICEID }}" >> $GITHUB_ENV
-          echo "VITE_TEMPLATEID=${{ secrets.VITE_TEMPLATEID }}" >> $GITHUB_ENV
-          echo "VITE_PUBLICKEY=${{ secrets.VITE_PUBLICKEY }}" >> $GITHUB_ENV
-
-      - name: Show Values Variables
-        run: |
-          echo "${{ secrets.VITE_SERVICEID }}"
-          echo "${{ secrets.VITE_TEMPLATEID }}"
-          echo "${{ secrets.VITE_PUBLICKEY }}"
+          echo "VITE_PUBLICKEY=${{ vars.VITE_PUBLICKEY }}"
+          echo "VITE_SERVICEID=${{ vars.VITE_SERVICEID }}"
+          echo "VITE_TEMPLATEID=${{ vars.VITE_TEMPLATEID }}"
 
       - name: Build Project
         run: npm run build
