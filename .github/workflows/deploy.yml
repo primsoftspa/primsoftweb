@@ -20,6 +20,12 @@ jobs:
           git config --global user.email "contacto@primsoft.cl"
           git config --global user.name "PrimSoft SPA"
 
+      # Set up GitHub token for authentication
+      - name: Set up GitHub token for authentication
+        run: |
+          git config --global credential.helper store
+          echo "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com" > ~/.git-credentials
+
       - name: Setup Node Js
         uses: actions/setup-node@v3
         with:
