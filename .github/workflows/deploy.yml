@@ -31,6 +31,12 @@ jobs:
         with:
           node-version: 16
 
+      - name: Set environment variables
+        run: |
+          echo "VITE_SERVICEID=${{ secrets.VITE_SERVICEID }}" >> $GITHUB_ENV
+          echo "VITE_TEMPLATEID=${{ secrets.VITE_TEMPLATEID }}" >> $GITHUB_ENV
+          echo "VITE_PUBLICKEY=${{ secrets.VITE_PUBLICKEY }}" >> $GITHUB_ENV
+
       - name: Install Dependencies
         run: npm install
 
