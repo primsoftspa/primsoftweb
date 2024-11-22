@@ -40,6 +40,12 @@ jobs:
           echo "VITE_SERVICEID=${{ vars.VITE_SERVICEID }}"
           echo "VITE_TEMPLATEID=${{ vars.VITE_TEMPLATEID }}"
 
+      - name: Set environment variables for Vite build
+        run: |
+          echo "VITE_PUBLICKEY=${{ vars.VITE_PUBLICKEY }}" >> .env
+          echo "VITE_SERVICEID=${{ vars.VITE_SERVICEID }}" >> .env
+          echo "VITE_TEMPLATEID=${{ vars.VITE_TEMPLATEID }}" >> .env
+          
       - name: Build Project
         run: npm run build
 
